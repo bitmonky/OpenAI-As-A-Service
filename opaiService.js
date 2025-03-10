@@ -68,7 +68,7 @@ var server = https.createServer(options, (req, res) => {
 });
 
 server.listen(port);
-console.log('Server mkyOPAI.2 running at antsrv.bitmonky.com:'+port);
+console.log('Server opaiService.js running at www.yourdomain.bitmonky.com:'+port);
 
 function  retEr(msg,res){
   res.end('{"result":false,"message":"'+msg+'"}\n');
