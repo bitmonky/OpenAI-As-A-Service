@@ -5,8 +5,8 @@ const port = 13481;
 import * as https from 'https';
 import * as  fs from 'fs';
 const options = {
-  key: fs.readFileSync('/etc/letsencrypt/live/antsrv.bitmonky.com/privkey.pem'),
-  cert: fs.readFileSync('/etc/letsencrypt/live/antsrv.bitmonky.com/fullchain.pem')
+  key: fs.readFileSync('/etc/letsencrypt/live/www.yourdomain.com/privkey.pem'),
+  cert: fs.readFileSync('/etc/letsencrypt/live/www.yourdomain.com/fullchain.pem')
 };
 
 import { Configuration, OpenAIApi } from "openai";
