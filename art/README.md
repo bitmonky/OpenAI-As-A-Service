@@ -1,1 +1,1 @@
-##  This fold will cache your image files created by ChatGPT
+##  This folder will cache your image files created by ChatGPT
