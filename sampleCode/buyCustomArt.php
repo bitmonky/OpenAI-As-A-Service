@@ -8,8 +8,8 @@ error_reporting(E_ALL);
 $rcode = null;
 $j = new stdClass;
 $tran = new stdClass;
-$prompt   = safeGET('prompt');
-$mode     = safeGET('mode');
+$prompt   = safeGET('prompt');  // THe Buyers text promt
+$mode     = safeGET('mode');    // Portrai or Landscape
 $amount   = safeGET('amount');
 $pMUID    = safeGET('pMUID');
 $pw       = safeGET('fpassword');
