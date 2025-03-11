@@ -83,26 +83,6 @@ if (!$result) {
   tranFail('Could not create order... Try later');
 }
 
-/*
-if (!authenticateByMUID($pMUID,$pw)){
-  fail('Password Not Matching Miner Account...');
-}
-else {
-
-  $SQL = "select wzUserID from tblwzUser where mbrMUID = '".$pMUID."'";
-  $qres = mkyMsqry($SQL);
-  $rec  = mkyMsFetch($qres);
-  if ($rec){
-    $userID = $rec['wzUserID'];
-  }
-  else {
-    fail('Miner Account Not Found');
-  }
-}
-if ($amount < 1){
-  fail('Minimum Withdraw Is 1.0000 bitMonky');
-}
-*/
 $pUrl = "https://antsrv.bitmonky.com:".$GLOBALS['MKYC_portOPAI']."/netREQ/msg=".mkyUrlEncode(json_encode($msg));
 
 $res = json_decode(getAccToken($pUrl));
